@@ -137,14 +137,16 @@ h2 {
 }
 
 .form-group {
-margin: 16px 0;
+    margin: 16px 0;
 }
 
 #application-form label {
     font-weight: 600;
 }
 
-#application-form input, select, textarea {
+#application-form input,
+select,
+textarea {
     padding: 8px;
     font-size: 1.25rem;
     margin-top: 4px;
@@ -153,8 +155,8 @@ margin: 16px 0;
 }
 
 .form-group textarea {
-    width: 80% ;
-    font-family: 'Roboto', sans-serif ;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .form-group input[type="checkbox"] {
