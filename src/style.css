@@ -1,3 +1,313 @@
+/*mobiiles*/
+
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0px;
+    Padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #444444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+a {
+    text-decoration: none;
+    color: #3B82F6;
+}
+
+a:hover a:focus {
+    color: #1D4ED8;
+}
+
+#navbar {
+    margin: 0;
+    padding: 3px 0;
+}
+
+#logo-with-text {
+    display: none;
+}
+
+#logo {
+    display: block;
+    max-height: 50px
+}
+#banner {
+    width: 100%;
+    object-fit: cover;
+    height: 160px;
+}
+
+h1 {
+    margin: 8px;
+}
+
+#About {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 8px;
+}
+
+#discription {
+    margin: 0 8px;
+    font-size: 1.25rem;
+}
+p {
+    margin: 15px;
+}
+
+ol {
+    margin-top: 0;
+}
+
+#team-image {
+    border-radius: 5px;
+    width: 100%;
+}
+
+#jobs-table {
+    display: none;
+}
+
+#jobs {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+  }
+  
+  .job {
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding: 8px;
+  }
+  
+  .job-title {
+    font-size: 1.25em;
+    color: #222222;
+    font-weight: 500;
+  }
+  
+  .job-detail {
+    color: #555555;
+    margin-top: 4px;
+  }
+  
+  #application {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 16px 0;
+}
+
+
+.form-group label {
+    font-weight: 600;
+}
+
+
+.form-group  input,
+select,
+textarea {
+    width: 80%;
+    padding: 8px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.form-group textarea {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-group input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+}
+
+.form-group input[type="submit"] {
+    background-color: #3B82F6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#footer {
+    background-color: #FAFAFA;
+    padding: 8px;
+    margin-top: 32px;
+}
+
+#copyright {
+    text-align: center;
+    margin: 32px;
+    color: #71717A;
+    font-size: 0.875rem;
+}
+#footer-links {
+     padding-left: 0;
+    list-style: none;
+    text-align: center;
+}
+    
+#footer-links li {
+    padding: 6px;
+}
+
+
+
+
+/* tablets */
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+
+    #logo-with-text {
+        display: block;
+    }
+    
+    #logo {
+        display: none;
+    }
+
+    #banner {
+        height: 210px;
+    }
+
+    h1 {
+        margin: 12px;
+    }
+    #footer-links li {
+        display: inline;
+        margin: 0px 32px;
+    }
+    
+    
+    
+}
+
+
+/* laptops */
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 18px;
+    }
+
+    #banner {
+        height: 250px;
+    }
+
+    h1 {
+        margin: 16px;
+    }
+
+    #About {
+        flex-direction: row;
+        max-width: 1100px
+    }
+
+    #discription {
+        width: 50%;
+    }
+
+    #team {
+        width: 50%;
+       
+    }
+
+    #team-image {
+        border-radius: 5px;
+        width: 100%;
+    }
+    #jobs-list { 
+        display: none;
+    }
+
+    #jobs-table {
+        display: table;
+    }
+    #jobs {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 8px;
+    }
+    
+    #jobs-table {
+        width: 100%;
+        border: 1px solid gray;
+        border-collapse: collapse;
+    }
+    
+    #jobs-table tr:nth-child(odd) {
+        background-color: #EFF6FF;
+    }
+    
+    .jobs-header-row th {
+        border: 1px solid grey;
+        padding: 8px;
+        background-color: #BFDBFE;
+        color: #222222;
+    }
+    
+    .jobs-data-row td {
+        border-right: 1px solid grey;
+        padding: 8px;
+    }
+ 
+    #application {
+        max-width: 1000px;
+    }
+    .form-group  input,
+select,
+textarea {
+    width: auto;
+}
+
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 20px;
+    }
+    
+    #banner {
+        height: 300px;
+    }
+}
+
+
+
+/*
 html {
     font-size: 16px;
 }
@@ -193,3 +503,4 @@ textarea {
     color: #71717A;
     font-size: 0.875rem;
 }
+    */
